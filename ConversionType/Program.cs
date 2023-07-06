@@ -1,8 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.Write("Enter a Value to !");
-string userData = Console.ReadLine();
+Console.Write("Enter a number to convert into a boolean!  \r\n");
+String userData = Console.ReadLine();
 int userInt = Convert.ToInt32(userData);
-//long userLong = Convert.Tolong; ;
-float userFloat = (float)Convert.ToDecimal(userInt,3);
-Console.WriteLine("Here is the value as an Int: {0}", userInt);
-Console.WriteLine("Here is the value as an Float: {0}", userFloat);
+bool userBool = Convert.ToBoolean(userInt);
+Console.WriteLine("Here is the value as an Boolean: {0}", userBool);
